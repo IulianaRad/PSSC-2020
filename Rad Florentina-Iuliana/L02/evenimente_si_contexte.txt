@@ -1,0 +1,16 @@
+StackOverflow
+-autentificare(utilizator)
+	-cautare intrebare(utilizator)
+		-afisare raspunsuri (StackOverflow)
+ 			-selectare intrebare(utilizator)
+			-vizualizare(utilizator)
+	-adaugare intrebare(utilizator)
+		-postarea intrebarii (StackOverflow)
+
+Evenimente:                      Contexte:
+
+-Autentificare                   -Afisare intrebare
+-Cautare intrebare               -Postare intrebare
+-Selectare intrebare             -Vizualizare intrebare
+-Adaugare intrebare
+-Asteptare raspuns
