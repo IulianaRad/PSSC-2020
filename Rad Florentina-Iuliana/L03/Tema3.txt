@@ -7,7 +7,7 @@ Bounded context: “Question context”
 	Side effects: Confirmation email sent to the user  (pentru verificare autenticității userului și pentru a da acordul privind postarea în mod public/privat a întrebării)
 Workflow: “Ask a new question”
 	Input: “Ask a new question form” 
-	Output: “New question validated/accepted and posted” event sau “invalid question form and not posted”
+	Output: “New question validated/accepted and posted” event and “invalid question form and not posted”
 
 
 //step 1
@@ -22,6 +22,6 @@ Return “New question validated/accepted and posted” event
 Substep “Validate new question form”
 	Input: “Unvalidated new question form” 
 	Output: “Validated new question form”
-	Dependencies: question validation and text analysing via ML (Machine learning): title validator, question body validator (de exemplu întrebările ce conțin doar majuscule vor fi șterse), tag validator
+	Dependencies: question validation and text analysing via ML (Machine learning): title validator, question body validator, tag validator
 	
 
