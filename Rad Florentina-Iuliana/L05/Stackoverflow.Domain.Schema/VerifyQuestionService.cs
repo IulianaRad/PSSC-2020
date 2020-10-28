@@ -1,0 +1,19 @@
+﻿using LanguageExt.Common;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using static Profile.Domain.CreateProfileWorkflow.EmailAddress;
+using static Stackoverflow.Domain.Schema.Question;
+
+namespace Profile.Domain.CreateProfileWorkflow
+{
+    public class VerifyQuestionService
+    {
+        public Result<VerifiedQuestion> VerifyQuestion(UnverifiedQuestion question)
+        {
+          
+
+            return new VerifiedQuestion(question.Title);
+        }
+    }
+}
